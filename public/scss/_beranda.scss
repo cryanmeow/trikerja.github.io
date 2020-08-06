@@ -1,0 +1,312 @@
+// Header
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  .navbar {
+    background: $color-primary;
+    padding: 1rem;
+    .navbar-brand {
+      img {
+        width: 15rem;
+      }
+    }
+    .collapse {
+      .navbar-nav {
+        .nav-item {
+          margin-left: 2rem;
+          .nav-link {
+            color: $color-white;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              transition: 0.5s;
+              background: $color-white;
+            }
+            &:hover::before {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.main-header {
+  .carousel {
+    .carousel-control-prev,
+    .carousel-control-next {
+      i {
+        background: $color-primary !important;
+        padding: 1rem;
+        border-radius: 99rem;
+      }
+    }
+    .carousel-item {
+      height: 100vh;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+      }
+    }
+  }
+}
+// About
+.about {
+  color: $color-text;
+  .img-about {
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    background: $color-body;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+  }
+  p {
+    font-size: 1.5rem !important;
+    text-align: justify;
+  }
+  .tabulation-2 {
+    .nav-pills {
+      .nav-item {
+        .nav-link {
+          background: $color-white;
+          border-radius: 2rem;
+          color: $color-text;
+          font-weight: 600;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          span {
+            color: $color-primary;
+          }
+          &.active {
+            color: $color-white;
+            background: $color-primary;
+            border: 1px solid $color-primary;
+            span {
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      background: $color-body;
+      border: none;
+      border-radius: 2rem;
+      padding: 1rem;
+    }
+  }
+}
+.title-about {
+  font-size: 5rem !important;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -2%;
+    width: 0;
+    height: 0.5rem;
+    width: 8rem;
+    background: $color-primary;
+  }
+}
+
+// Fitur
+.fitur {
+  color: $color-text;
+  .fiturr {
+    margin-top: 5rem !important;
+  }
+  .card-fitur {
+    margin-bottom: 6rem;
+    background: $color-body;
+    border-radius: 2rem;
+    position: relative;
+    .card-body {
+      height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        background: $color-white;
+        padding: 2rem;
+        color: $color-primary;
+        border-radius: 90%;
+        position: absolute;
+        top: -5rem;
+      }
+    }
+  }
+}
+
+// Program
+.program {
+  color: $color-text;
+  .card {
+    border: none;
+    background: $color-body;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    .card-body {
+      padding: 2rem;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        h1 {
+          font-size: 3rem !important;
+          font-weight: 700 !important;
+        }
+        .top-right {
+          h1 {
+            font-size: 2rem !important;
+            font-weight: 300 !important;
+          }
+        }
+      }
+      a {
+        margin: 1rem 0 !important;
+      }
+    }
+  }
+  .premium {
+    background: $color-second;
+    color: $color-white;
+    a {
+      background: $color-white;
+      color: $color-text;
+    }
+  }
+  ul {
+    li {
+      margin: 1rem 0;
+    }
+  }
+}
+
+// Main Content
+.main-content {
+  color: $color-text;
+  height: 90vh;
+  .first {
+    background: $color-primary !important;
+    color: $color-white;
+    position: relative;
+    overflow: hidden;
+    .bullets {
+      background: $color-white;
+      width: 15rem;
+      height: 15rem;
+      position: absolute;
+      border-radius: 100rem;
+      bottom: -1rem;
+      right: -2rem;
+      opacity: 0.2;
+    }
+  }
+  .card {
+    border: none;
+    margin-bottom: 2.5rem;
+    background: $color-body;
+    border-radius: 2rem;
+    height: 25rem;
+    .card-body {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    * {
+      margin: 0.5rem 0;
+    }
+  }
+  .left {
+    p,
+    .img {
+      margin: 2rem auto;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background: $color-primary;
+  color: $color-white;
+  padding: 2rem;
+  .title-footer {
+    font-size: 3rem !important;
+  }
+  a {
+    color: $color-white;
+    font-size: 1.5rem;
+  }
+}
+.img-full {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: $color-body;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.img {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  background: $color-body;
+  border-radius: 2rem;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+}
+.marginbottom-10 {
+  margin-bottom: 10rem;
+}
+.color-blue {
+  color: $color-primary;
+}
+.button-primary {
+  padding: 1rem;
+  background: $color-primary;
+  color: $color-white;
+  margin: 1rem 0;
+  border-radius: 2rem;
+  font-size: 1.25rem;
+  &:hover {
+    color: $color-white;
+  }
+}

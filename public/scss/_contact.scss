@@ -1,0 +1,41 @@
+// Contact
+.contact {
+  color: $color-text;
+  p {
+    font-size: 2rem;
+  }
+  form {
+    .form-group {
+      label {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .input-submit {
+    padding: 1rem 2rem;
+    border: none;
+    background: $color-primary;
+    color: $color-white;
+    border-radius: 2rem;
+  }
+}
+
+// Question
+.question {
+  color: $color-text;
+  .card-question {
+    background: $color-body;
+    padding: 2rem;
+    margin: 1rem 0;
+    h2 {
+      font-size: 2rem !important;
+    }
+  }
+  .answer {
+    background: $color-primary !important;
+    padding: 2rem;
+    color: $color-white;
+    margin: 1rem 0;
+    border-bottom: 2px solid $color-text;
+  }
+}
