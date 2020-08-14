@@ -250,7 +250,7 @@ header {
 
 // Footer
 .footer {
-  background: $color-primary;
+  background: $color-second;
   color: $color-white;
   padding: 2rem;
   .title-footer {
@@ -259,6 +259,14 @@ header {
   a {
     color: $color-white;
     font-size: 1.5rem;
+  }
+  .foot {
+    div {
+      margin-bottom: 1.25rem;
+    }
+  }
+  .sosmed * {
+    margin-right: 1.25rem !important;
   }
 }
 .img-full {
